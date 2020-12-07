@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Udates Result</title>
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="About covid19.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+
+</head>
+<body>
+
+
+
+
+<!------------------------------Navbar / Menubar-------------------------------------->
+
+	<section id="nav-bar">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<!----------------------------Nvigation Bar logo Start--------------------------------->
+		 	<div class="navlogo">
+			  	<a class="navbar-brand" href="index.html">
+			  		<div class="covidlogo">
+			  			<img src="images/Icon and main images/covid 19 .png" class="d-inline-block align-center" >
+			  			<b class="b1">Fight</b>
+			  			<b class="b2">Covid19</b>
+			  		</div>
+			  	</a>
+			</div>
+<!----------------------------Nvigation Bar logo Ends--------------------------------->
+
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="navbarNav"		aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			    <span class="navbar-toggler-icon">
+			    	
+			    </span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+			    <ul class="navbar-nav ml-auto">
+			      
+			      <li class="nav-item">
+			        <a class="nav-link" href="index.html">Home </a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link" href="About covid19.html">About Covid-19</a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link" href="update.html">Updates</a>
+			      </li>
+			      <!-- <li class="nav-item">
+			        <a class="nav-link " href="#about" tabindex="-1" aria-disabled="true">about us</a>
+			      </li> -->
+			      
+			      <li class="nav-item">
+			        <a class="nav-link" href="#testimonials">Researches</a>
+			      </li>
+			      <!-- <li class="nav-item">
+			        <a class="nav-link" href="#contact">contact us</a>
+			      </li> -->
+			    </ul>
+			</div>
+		</nav>
+	</section>
+<br>
+
+<section id="symptoms">
+	<div class="container">
+		
+
+<!----------------------------------Data Display Section------------------------------------------>
+
+
+
+		<h1>Total Global Data</h1>
+<div id="table">
+		<table width="500px" border="1px" cellpadding="8px" cellspacing="0">
+			<tr>
+<!-- 				<td colspan="2"><h2>Global Data</h2></td> -->
+			</tr>
+			<tbody id="global-wise"></tbody>
+		</table>
+	</div>
+		<br>
+
+		<h1>Individual Countries Data</h1>
+
+		<table width="100%" border="1px" cellpadding="8px" cellspacing="0">
+			<tr>
+<!-- 				<td colspan="2"><h2>Countries Data</h2></td> -->
+			</tr>
+  
+			<tr>
+				<th>S.no</th>
+				<!-- <th>Date</th> -->
+				<th>Country</th>
+				<th>NewConfirmed</th>
+				<th>NewDeaths</th>
+				<th>NewRecovered</th>
+				<th>TotalConfirmed</th>
+				<th>TotalDeaths</th>				
+				<th>TotalRecovered</th>
+				
+				
+			</tr>
+			<tbody id="country-wise"></tbody>
+		</table>
+
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+
+		$.ajax
+	({
+
+	url : "https://api.covid19api.com/summary",
+	type : "GET",
+	datatype : "Jason",
+
+	success : function(data){
+	console.log(data);
+	console.log(data.Countries);
+
+	$.each(data.Global, function(key, value){
+ 		$("#global-wise").append("<tr><td>" + key+ "</td><td>" +value + "</td></tr>")
+		});
+
+	var sno = 1;
+	$.each(data.Countries, function(key, value){
+ 		$("#country-wise").append("<tr>" +
+ 			"<td>" + sno + "</td>" +
+ 			"<td>" + value.Country + "</td>" + 
+ 			"<td>" + value.NewConfirmed + "</td>" +
+ 			"<td>" + value.NewDeaths + "</td>" + 
+ 			"<td>" + value.NewRecovered + "</td>" +
+ 			"<td>" + value.TotalConfirmed + "</td>" + 
+ 			"<td>" + value.TotalDeaths + "</td>" + 
+ 			"<td>" + value.TotalRecovered + "</td>" +
+ 			"</tr>");
+
+ 		sno++;
+
+		});
+	}
+}); 
+
+
+
+	</script>
+
+<hr>
+<!----------------------------------Data Display Section Ends Here------------------------------------------>
+
+<!---------------------------------Footer section ---------------------------->
+
+<section id="footer">
+
+  	<div class="container">
+  		<div class="row">
+  			<div class="col-md-4 footer-box1" >
+  				<img src="images/Icon and main images/covid 19 .png">
+  				<P>FightCovid19</P>
+  			</div>
+  			<div class="col-md-4 footer-box" >
+  				<p><b>CONTACT US</b></p>
+  				<p><i class="fa fa-map-marker" aria-hidden="true"></i>
+  				 world trade centre, delhi</p>
+  				<P><i class="fa fa-phone" aria-hidden="true"></i> +1 09587945622</P>
+  				<P><i class="fa fa-envelope-o" aria-hidden="true"></i> XYZ@email,com</P>
+  				
+  			</div>
+
+  		<div class="col-md-4 footer-box">
+  			<p><b>FIND US ON SOCIAL MEDIA</b></p>
+        <p><i class="fa fa-twitter" aria-hidden="true"></i>Twitter</p>
+        <p><i class="fa fa-facebook-official" aria-hidden="true"></i>facebook</p>      
+        <p><i class="fa fa-linkedin-square" aria-hidden="true"></i>linkedin</p>
+      </div>	
+
+  		</div>
+  		<hr>
+  		<p class="copyright">website made by Gaurav Tiwari </p>
+  	</div>
+  </section>
+
+
+	</div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

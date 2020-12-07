@@ -1,0 +1,495 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.covidlogo img
+{
+	border-radius: 2px;
+	height: 60px;
+	width: 60px;
+}
+
+.b1
+{
+	font-size: 30px;	
+}
+
+.b2
+{
+	font-size: 30px;
+	color:red; 
+}
+#nav-bar{
+	position: sticky;
+	top: 0;
+	z-index: 10;
+}
+.navbar-nav li{
+	padding: 0 10px;
+	
+}
+
+#navbarNav ul li
+{
+	color: #EAEDED;
+}
+
+.navbar-nav li a{
+float: right;
+text-align: left;
+color: #FDFEFE;
+
+}
+
+#nav-bar ul li a:hover
+{
+	color: #82E0AA !important
+}
+.navbar{
+	background: #fff;
+}
+.navbar-toggler{
+	border: none !important;
+}
+
+.nav-link{
+	color: #555 !important;
+	font-weight: 600;
+	font-size: 16px;
+}
+
+.information_block
+{
+	overflow:hidden;
+	margin-bottom: 5px;
+	width: 100%;
+}
+.information_block h3
+{ 
+	font-size:1.6em;  
+	margin-bottom:0px; 
+	font-weight:700;
+}
+
+.information_row 
+{ 
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    padding: 22px 0;
+    padding-bottom:15px;
+
+	flex-wrap: wrap; 
+	border:none; 
+	justify-content: space-between;
+/*	padding:5px 0 10px;*/ 
+	margin-bottom:0px;
+}
+
+.info_title
+{
+	width:250px; 
+	text-align:center; 
+	display: flex; 
+	-ms-flex-pack: center;  
+	justify-content: center;
+	flex-direction: column;  
+	margin-bottom:10px; 
+	margin-right:0px;
+	background: #85C1E9;
+	border-radius: 15px;
+}
+.info_title p
+{
+	font-weight:700; 
+	margin:0px; 
+	color:#616161; 
+	font-size:1.143em;
+}
+.info_title span
+{
+	coplor:#aaa;
+}
+.iblock_text
+{ 
+	padding-left:13px; 
+	max-width:167px;
+	padding-left:0px; max-width:100%;
+}
+.icount 
+{
+	font-size: 1.429em;	
+	font-weight: bold;
+}
+
+
+
+.active-case
+{
+	width:200px;
+	text-align:center; 
+	display: flex; 
+/*	-ms-flex-pack: center;  
+*/	justify-content: center;
+	flex-direction: column;  
+	margin-bottom:10px; 
+	margin-right:0px;
+/*	background: #85C1E9;
+*/	border-radius: 15px;
+
+	position: relative; 
+	line-height: 1; 
+/*	max-width: 160px; 
+*/	font-weight: 700;
+	font-size: 0.857em;
+	background: #E6B0AA;
+}
+.discharge 
+{
+	width:200px; 
+	text-align:center; 
+	display: flex; 
+/*	-ms-flex-pack: center;  
+*/	justify-content: center;
+	flex-direction: column;  
+	margin-bottom:10px; 
+	margin-right:0px;
+/*	background: #85C1E9;
+*/	border-radius: 15px;
+
+	position: relative; 
+	line-height: 1; 
+/*	max-width: 160px; 
+*/	font-weight: 700;
+	font-size: 0.857em;
+	background: #E6B0AA;
+	background: #76D7C4;
+}
+.death_case 
+{
+	width:200px; 
+	text-align:center; 
+	display: flex; 
+/*	-ms-flex-pack: center;  
+*/	justify-content: center;
+	flex-direction: column;  
+	margin-bottom:10px; 
+	margin-right:0px;
+/*	background: #85C1E9;
+*/	border-radius: 15px;
+
+	position: relative; 
+	line-height: 1; 
+/*	max-width: 160px; 
+*/	font-weight: 700;
+	font-size: 0.857em;
+	background: #E6B0AA;
+	background:#EC7063;
+}
+.migared_case 
+{
+	width:200px; 
+	text-align:center; 
+	display: flex; 
+/*	-ms-flex-pack: center;  
+*/	justify-content: center;
+	flex-direction: column;  
+	margin-bottom:10px; 
+	margin-right:0px;
+/*	background: #85C1E9;
+*/	border-radius: 15px;
+
+	position: relative; 
+	line-height: 1; 
+/*	max-width: 160px; 
+*/	font-weight: 700;
+	font-size: 0.857em;
+	background: #E6B0AA;
+/*	background: #A569BD;*/
+}
+.info_label small 
+{	
+	color: #e51f3b;	
+	position: absolute;	
+	top: 100%;	
+	left: 10px;
+}
+
+.px-lg-5{
+	border-radius: 20px;
+	background: #B2BABB;
+	margin: 5px;
+	text-align: center;
+
+}
+
+.px-lg-5 span
+{
+	font-size: 1.3rem;	
+}
+.col-sm
+{
+	border-radius: 20px;
+	margin: 5px;
+}
+.Hotspot
+{
+
+	width:350px; 
+	text-align:center; 
+	display: flex; 
+	justify-content: center;
+	flex-direction: column;  
+	margin-bottom:10px; 
+	margin-right:0px;
+	border-radius: 10px;
+	position: relative; 
+	line-height: 1; 
+	font-weight: 700;
+	font-size: 0.857em;
+	height: 40px;
+	background: #A569BD;
+}
+.Hotspotdetails h4
+{
+	text-align: center;
+	color: #330000;
+}
+.Emmergency 
+{
+	background: #0288D1 ;
+	width:350px; 
+	text-align:center; 
+	display: flex; 
+	justify-content: center;
+	flex-direction: column;  
+	margin-bottom:10px; 
+	margin-right:0px;
+	border-radius: 10px;
+	position: relative; 
+	line-height: 1; 
+	font-weight: 700;
+	font-size: 0.857em;
+	height: 40px;
+}
+.Emergencydetails 
+{
+	text-align: center;
+	color: #330000;
+}
+.Helpdesk
+{	
+	background: #81C784;
+	width:350px; 
+	text-align:center; 
+	display: flex; 
+	justify-content: center;
+	flex-direction: column;  
+	margin-bottom:10px; 
+	margin-right:0px;
+	border-radius: 10px;
+	position: relative; 
+	line-height: 1; 
+	font-weight: 700;
+	font-size: 0.857em;
+	height: 40px;	
+}
+.Helpdeskdetails
+{
+	text-align: center;
+	color: #330000;
+}
+
+.leftimage img
+{
+	margin-top: 20px;
+	height: 200px;
+	width: 650px;
+	border-radius: 15px;
+}
+
+.Rightimage img
+{
+	margin-top: 20px;
+	height: 200px;
+	width: 650px;
+	border-radius: 15px;
+}
+
+/*
+.right-text p
+{
+	text-align: center;
+	margin-top: 20px;
+	color: #A569BD;
+	font-size: 50px;
+	font-weight: bolder;
+}*/
+#Aboutcovid19{
+	background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(img/);
+	background-size: cover;
+	background-position: center;
+	color: #efefef !important;
+	background-attachment: fixed;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	border-radius: 10px;
+}
+.Covid-19
+{
+	text-align: center;
+	color: #efefef !important;
+	padding-bottom: 10px;
+}
+.Covid-19 h1::after{
+	content: '';
+	background: #efefef;
+	display: block;
+	height: 3px;
+	width: 170px;
+	margin: 10px auto 5px;
+}
+.Covid-19 button{
+	margin: 5px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 5px;
+	border-radius: 5px;
+	width: 200px;
+	height: 50px;
+}
+.Covid-19 button a
+{
+	text-decoration: none;
+}
+
+/*---------------------Symptoms section-------------------*/
+
+#symptoms{
+	padding-top: 50px;
+	padding-bottom: 50px;
+	color: #555;
+}
+#symptoms h1
+{
+	text-align: center;
+	color: #555 !important;
+	padding-bottom: 10px;
+}
+
+#symptoms h1::after
+{
+	content: '';
+	background: #007bff;
+	display: block;
+	height: 3px;
+	width: 190px;
+	margin: 20px auto 5px;
+}
+
+/*---------------footer------------------*/
+
+
+
+.footer-box1 img
+{
+	border-radius: 10px;
+	height: 100px;
+	width: 100px;
+}
+.footer-box1 p
+{
+	margin-left: 5px;
+	font-size: 15px;
+	font-weight: bold;
+	padding-bottom: 10px;
+}
+/*.footerbanner
+{
+	background-color: #D6EAF8 ;
+}
+*/
+.copyright
+{
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
